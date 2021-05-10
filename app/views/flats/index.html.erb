@@ -1,0 +1,9 @@
+<h1>Flats</h1>
+
+<ol>
+  <% @flats.each do |flat| %>
+    <!-- When no _path -->
+    <!-- <li><%#= link_to flat['name'], "/flats/#{flat['id']}" %></li> -->
+    <li><%= link_to flat['name'], flat_path(flat['id']) %></li>
+  <% end %>
+</ol>
